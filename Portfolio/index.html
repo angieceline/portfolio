@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Angelina Celine — Portfolio</title>
+  <meta name="description" content="Angelina Celine — Engineering student. Projects: Mental Health AI, Library Management System, Bearing Fault Classification.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Angelina Celine</h1>
+        <p class="muted">B.E. Computer Science · Engineering student</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="hero" class="hero container">
+      <div class="hero-left">
+        <h2>Building intelligent systems and clean user experiences</h2>
+        <p class="lead">
+          Engineering student with hands-on experience in machine learning and software projects — mental health AI, bearing fault detection, and a library management system. Passionate about Java, distributed systems fundamentals, and UX-informed engineering.
+        </p>
+        <p class="meta">
+          <a href="mailto:angelinaceline992@gmail.com">angelinaceline992@gmail.com</a> · <a href="https://www.linkedin.com/in/angelina-celine-226138274" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+        <p class="actions">
+          <a href="#projects" class="btn">See projects</a>
+          <a href="E:\RESUME.pdf" class="btn subtle" download>Download CV</a>
+        </p>
+      </div>
+
+      <div class="hero-right">
+        <!-- Simple avatar box — swap with an actual image if you want -->
+        <img src="me.jpeg" alt="Angelina Celine" class="avatar" />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container section">
+      <h3>About</h3>
+      <p>
+        Currently pursuing B.E. in Computer Science at Anna University Regional Campus, Tirunelveli. Completed internships on bearing fault diagnosis (NIT Trichy) and a short data science internship (Kevell Corps). Certificate in AI & ML basics. Secretary of IEI Student Chapter — coordinated technical and cultural events. 
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container section">
+      <h3>Projects</h3>
+
+      <article class="project">
+        <h4>Mental Health AI (questionnaire-driven)</h4>
+        <p class="proj-meta">Role: Lead · Tech: Python, ML pipelines, Flask (or preferred stack)</p>
+        <p>Short: Built an AI system that analyzes questionnaire responses to triage mental health states and provide data-driven insights. Includes model training, evaluation, and front-end interface for users.</p>
+        <p class="links">
+          <!-- Replace with actual links -->
+          <a href="https://github.com/angieceline/mental-health-ai" target="_blank" rel="noopener">GitHub</a> · <a href="#" target="_blank" rel="noopener">Demo</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <h4>Bearing Fault Identification & Classification</h4>
+        <p class="proj-meta">Role: Intern (NIT Trichy) · Tech: ML, signal processing</p>
+        <p>Short: Trained ML models on bearing data to classify fault types and improve detection accuracy. Intern project description referenced from resume. :contentReference[oaicite:2]{index=2}
+            <a href="https://github.com/angieceline/Bearing-Fault-Diagnosis" target="_blank" rel="noopener">GitHub</a>
+        </p>
+      </article>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="container section">
+      <h3>Skills</h3>
+      <div class="skill-grid">
+        <div>
+          <h5>Languages</h5>
+          <p>Java · Python · C</p>
+        </div>
+        <div>
+          <h5>Web & DB</h5>
+          <p>HTML · CSS · SQL</p>
+        </div>
+        <div>
+          <h5>Tools</h5>
+          <p>Git · VS Code · MS Office</p>
+        </div>
+        <div>
+          <h5>Domains</h5>
+          <p>ML basics · Distributed systems fundamentals · UX research</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Roles -->
+    <section id="experience" class="container section">
+      <h3>Experience & Activities</h3>
+      <ul>
+        <li><strong>Secretary</strong>, IEI Student Chapter — Coordinated events, managed teams (Aug 2024 — ongoing). :contentReference[oaicite:3]{index=3}</li>
+        <li><strong>Internships:</strong> Bearing Fault Diagnosis (NIT Trichy); Data Science (Kevell Corps, Madurai). :contentReference[oaicite:4]{index=4}</li>
+        <li><strong>Workshops:</strong> Soft skills training by Naandi, Titan Leap.</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container section contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:angelinaceline992@gmail.com">angelinaceline992@gmail.com</a></p>
+      <p>Phone: 6374127452</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/angelina-celine-226138274" target="_blank" rel="noopener">Angelina Celine</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Angelina Celine — Tirunelveli · Resume data referenced from uploaded CV. :contentReference[oaicite:5]{index=5}</small>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>

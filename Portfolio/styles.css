@@ -1,0 +1,61 @@
+:root{
+  --bg:#ffffff;
+  --text:#0b1220;
+  --muted:#5b705c;
+  --accent:#30c60b;
+  --maxw:980px;
+  --radius:12px;
+  --gap:20px;
+  font-synthesis: none;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.45;
+  -webkit-font-feature-settings:"ss01" on;
+}
+
+.container{max-width:var(--maxw);margin:0 auto;padding:40px 20px}
+.site-header{border-bottom:1px solid #9aff67;position:sticky;top:0;background:var(--bg);z-index:10}
+.header-inner{display:flex;justify-content:space-between;align-items:center}
+.brand h1{font-size:1.05rem;margin:0}
+.muted{color:var(--muted);font-size:.88rem;margin:6px 0 0}
+
+.nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:600;font-size:.92rem}
+.nav a.cta{background:var(--accent);color:#9aff67;padding:8px 12px;border-radius:8px;text-decoration:none}
+.nav a:hover{opacity:.88}
+
+.hero{display:grid;grid-template-columns:1fr 180px;gap:var(--gap);align-items:center;padding-top:32px;padding-bottom:32px}
+.hero-left h2{margin:0 0 12px;font-size:1.4rem}
+.lead{color:var(--muted);margin:0 0 12px}
+.meta a{color:var(--accent);text-decoration:none}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;border:none;background:var(--accent);color:#fff;font-weight:600;margin-right:8px}
+.btn.subtle{background:transparent;color:var(--accent);border:1px solid rgba(11, 255, 44, 0.12)}
+
+.avatar{width:160px;height:160px;object-fit:cover;border-radius:14px;border:1px solid #eee;box-shadow:0 6px 18px rgba(11,20,30,.04)}
+
+.section{padding-top:12px;padding-bottom:24px;border-top:1px solid #9aff67}
+.section h3{margin:0 0 12px;font-size:1.05rem}
+.project{margin-bottom:18px;padding-bottom:12px}
+.proj-meta{color:var(--muted);font-size:.9rem;margin:6px 0}
+
+.skill-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.skill-grid h5{margin:0 0 6px;font-size:.95rem}
+ul{padding-left:1.05rem;color:var(--muted)}
+
+.site-footer{border-top:1px solid #9aff67;padding:18px 0;color:var(--muted);font-size:.88rem;text-align:center}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;gap:18px}
+  .nav{display:none}
+  .skill-grid{grid-template-columns:1fr}
+  .avatar{width:120px;height:120px;margin:0 auto;display:block}
+  .header-inner{padding:12px 0}
+}
