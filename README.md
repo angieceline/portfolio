@@ -23,3 +23,5 @@ Contact section
 HTML5
 
 CSS3 (custom, minimal, no frameworks)
+
+Portfolio link: https://angieceline.github.io/portfolio/
